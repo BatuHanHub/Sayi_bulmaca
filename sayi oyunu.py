@@ -1,11 +1,11 @@
-#yazarlar : BatuHanHub
-#yardımın için teşekkürler gizli kahraman O7
-
 import random 
 
-kolay_mod = 4
-normal_mod = 7
-zor_mod = 10
+print ( """Sayı Bulmaca, sürüm 1.5 -sürüm (x86_x64)
+Lisans GPLv3+ : GNU GPL sürüm 3 <https://www.gnu.org/licenses/gpl-3.0.html>
+telif hakkı (C) 2022 BatuHanHub 
+
+Bu ücretsiz bir yazılımdır; değiştirmekte ve yeniden dağıtmakta özgürsünüz.
+Yasaların izin verdiği ölçüde HİÇBİR GARANTİ YOKTUR.""" )
 
 print('''SAYI BULMACA OYUNUNA HOSGELINIZ!
       
@@ -21,28 +21,28 @@ print('''SAYI BULMACA OYUNUNA HOSGELINIZ!
 
 while True:
         
-    koz=str(input(">>>"))
+    koz=str(input(">"))
     
-    if koz == ("k" or "K"):
-        koz = kolay_mod
+    if koz == "k" or "K":
+        kolay_mod=random.randint(1,4)
         break
     
-    elif koz == ("n" or "N"):
-        koz = normal_mod
+    elif koz == "n" or "N":
+        normal_mod=random.randint(1,7)
         pass
         
-    elif koz == ("z" or "Z"):
-        koz = zor_mod
+    elif koz == "z" or "Z":
+        zor_mod=random.randint(1,10)
         pass
     
-    elif koz != ("k" , "K" , "n" , "N" , "z" , "Z") :
+    elif koz != "k" or "K" and "n" or "N" and "z" or "Z":
         print('''HATA: lütfen zorluk seviyenizi yazınız
               
       Zorluk seviyeleri;
       
       #############################
       *Kolay mod için "k" yazınız.
-      **Orta mod için "o" yazınız.
+      **Normal mod için "n" yazınız.
       ***Zor mod için "z" yazınız.
       #############################
       
@@ -53,21 +53,16 @@ while True:
     
 while True:
     
-    sayı = random.randint(1,koz)
-    
     tahmin=int(input("bence:"))
     
-    if sayı == tahmin:
+    if koz == tahmin:
         print("\nTebrikler kazandınız!\n")
         pass
         
-    elif sayı != tahmin:
+    elif koz != tahmin:
         print("\nbulamadın\n")
-        continue
+        continue 
     
     break
     
-
-
-input("çıkmak için bir tuşa basınız...")
-     
+input("oyundan çıkmak için bir tuşa basınız...")     
