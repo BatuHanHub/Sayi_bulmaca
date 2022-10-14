@@ -1,2 +1,1 @@
-# Güncelleme gelecek
 
