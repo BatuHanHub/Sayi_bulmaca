@@ -25,7 +25,7 @@ while True:
     
     if koz == "k" or "K":
         kolay_mod=random.randint(1,4)
-        break
+        pass
     
     elif koz == "n" or "N":
         normal_mod=random.randint(1,7)
