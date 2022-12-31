@@ -2,7 +2,8 @@ import random
 
 print ( """Sayı Bulmaca, sürüm 2.0 -sürüm (x86_x64)
 Lisans GPLv3+ : GNU GPL sürüm 3 <https://www.gnu.org/licenses/gpl-3.0.html>
-telif hakkı (C) 2022 BatuHanHub 
+telif hakkı (C) 2023 BatuHanHub 
+
 Bu ücretsiz bir yazılımdır; değiştirmekte ve yeniden dağıtmakta özgürsünüz.
 Yasaların izin verdiği ölçüde HİÇBİR GARANTİ YOKTUR.""" )
 
